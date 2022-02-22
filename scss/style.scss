@@ -1,0 +1,18 @@
+@use 'custom';
+
+//import the components
+
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/mix-ins';
+@use 'components/typography';
+
+//import the sections
+
+@use 'sections/contact';
+@use 'sections/experience';
+@use 'sections/footer';
+@use 'sections/introsection';
+@use 'sections/navbar';
+@use 'sections/projects';
+@use 'sections/portfolio';
