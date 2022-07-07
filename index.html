@@ -38,9 +38,6 @@
                 <a class="nav-link" href = "#contact">Contact</a>
               </li>
             </ul>
-            <button type="button" class = "rounded-pill btn-rounded">mom
-              <span><i class="fas fa-phone-alt"></i></span>
-            </button>
           </div>
         </div>
       </nav>
@@ -52,33 +49,48 @@
         <div class="container">
           <div class="row align-items-center text-white text-center">
             <!--start for intro content-->
-            <div class="col-md-6 intros"><h1 class="display-2">
-              <span class="display-2--intro">welcome</span>
-              <span class="display-2--description lh-base">poop :D</span>
+            <div class="col-md-8 intros"><h1 class="display-2">
+              <span class="display-2--intro">AMELIA RAE ORODIO</span>
+              <p class="lead">Stony Brook University 2024</p>
             </h1>
-            <button type="button" class = "rounded-pill btn-rounded">get in touch
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button></div>
             <!--u can get these illustrations on manypixels.co-->
-            <!--start content video-->
-            <div class="col-md-6 intros text-end">
-              <div class="video-box">
-                <img src="/images/arts/Coding _Monochromatic.png" alt="videoIll" class = "img-fluid">
-                <a href="#" class="position-absolute top-50 start-50 translate-middle">
-                  <span>
-                    <i class="fas fa-play-circle"></i>
-                  </span>
-                  <span class="border-animation border-animation--border-1"></span>
-                  <span class="border-animation border-animation-border-2"></span>
-                </a>
-              </div>
-            </div>
           </div>
+            <div class="col-md-4">
+              <img src="images/porfolio main pic.jpg" alt="">
+            </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L30,208C60,224,120,256,180,234.7C240,213,300,139,360,144C420,149,480,235,540,250.7C600,267,660,213,720,176C780,139,840,117,900,133.3C960,149,1020,203,1080,218.7C1140,235,1200,213,1260,181.3C1320,149,1380,107,1410,85.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+       
       </section>
       <!--HERE pushing this onto git and then we gonna delete these lines in case i wanna revert -->
        
+      <!---start of the biography section-->
+      <section id = "biography" class = "biography">
+        <div class="container">
+          <div class="row text-center mt-5">
+            <h1 class="display-3 fw-bold text-capitalize">About Me</h1>
+            <!---insert a mf cute ass pic or two of yourself here-->
+            <div class="heading-line"></div>
+            <div class="row mt-5 mb-4 g-1 text-center">
+              <div class="col-md-12">
+                <button class="btn btn-outline-primary" type = "button" onclick = "window.open('https://1drv.ms/b/s!AkzwfUAwbGVj2BNdqYGWCfvdjBW_','_blank')">resume</button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="lead-text">
+                  Hello, I am Amelia Rae Orodio. I am a third year student at Stony Brook University.
+                I am cuurently a computer science major and I am with Java programming, web development, and data structures.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="lead-text">
+                  During my free time, I enjoy many of the arts, video games. I play piano, guitar, and ukulele. 
+                I also love to draw and paint in different mediums, favorite is acrylic.
+                Some of my favorite titles include Stardew Valley, Minecraft, Valorant, and Bloons TD 6.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!--start the portfolio-->
       <section id="projects" class="portfolio">
         <div class="container">
@@ -86,33 +98,36 @@
             <h1 class="display-3 fw-bold text-capitalize">latest work</h1>
             <div class="heading-line"></div>
             <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, voluptatibus! Quam, maxime.
+              Hackatons, personal projects, class projects
             </p>
-          </div>
-          <!--filter buttons-->
-          <div class="row mt-5 mb-4 g-3 text-center">
-            <div class="col-md-12">
-              <button class="btn btn-outline-primary" type="button">All</button>
-              <button class="btn btn-outline-primary" type="button">Games</button>
-              <button class="btn btn-outline-primary" type="button">Hackathons</button>
-            </div>
-          </div>
-      
+          </div> 
           <!--start portfolio content-->
           <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-box shadow">
-                <img src="images/projects/calculator.png" alt="calc" title = "calc">
+            <!---turn these parts into modals where u can write about what each one is and does-->
+            <div class="col-lg-4 col-md-4">
+              <div class="portfolio-box">
+                <img src="images/projects/portfolio.png" alt="calc" title = "calc">
                 <div class="portfolio-info">
                   <div class="caption">
-                    <h4>CalculatorUI</h4>
-                    <p>All</p>
+                    <h4>Portfolio</h4>
+                    <p>Personal Project</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-box shadow">
+            <div class="col-lg-4 col-md-4">
+              <div class="portfolio-box">
+                <img src="images/projects/calculator.png" alt="calc" title = "calc">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>CalculatorUI</h4>
+                    <p>Personal Project</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="portfolio-box">
                 <img src="images/projects/coolbeans.png" alt="cool beans" title = "cool beans">
                 <div class="portfolio-info">
                   <div class="caption">
@@ -132,20 +147,40 @@
           <div class="row text-center">
             <h1 class="display-3 fw-bold text-capitalize">contact me</h1>
             <div class="heading-line"></div>
-            <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius vero voluptatum?</p>
-          </div>
+            <p class="lead">Have any questions or concerns? Send me an email!</p>
+            <div class="col-12">
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayvgovo" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <div class="col-12">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" class = "text" name="name" id="full-name" placeholder="First and Last" required="">
+                  </div>
+                  <div class="col-12">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" class = "text" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  </div>
+                  <label for="message">Message</label>
+                  <textarea rows="5" cols="70" name="message" id="message" required=""></textarea>
+                  
+                  <input type="hidden" class = "msg" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" class = "btn btn-outline-primary-2" value="Submit">
+              </form>
+            </div>
           <!--start the contact boxes-->
-          <div class="row text-white">
-            <div class="col-12 col-lg-6 gradient shadow p-3">
+          <div class="row align-items-center ">
+            <div class="col-12 col-lg-12 gradient shadow p-3">
               <div class="ending-description w-100">
-                <h4 class="display-4 fw-bold">Thank you for looking through this website!</h4>
-                <p class="lh-lg">If you would like to reach out, be sure to shoot me an email!</p>
-                <ul class="contact-info__list">
-                  <li>email: ameliaraeorodio@stonybrook.edu</li>
-                  <li>github: ameliaraeorodio</li>
-                </ul>
+                <a href="https://github.com/ameliaraeorodio">
+                  <img src="images/logos/GitHub-Mark-64px.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/amelia-rae-orodio/">
+                  <img src="images/logos/linkie.png" alt="">
+                </a>
               </div>
             </div>
+          </div>
+        </div>    
       <script src="/assets/js/jquery.js"></script>
       <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
