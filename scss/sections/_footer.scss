@@ -2,6 +2,12 @@
 @use '../components/mix-ins' as *;
 
 .footer{
-    padding-top: 1rem;
-    background-color: $footer;
+    @include gradient;
+    a{
+        color: $white;
+        i{
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    }
 }

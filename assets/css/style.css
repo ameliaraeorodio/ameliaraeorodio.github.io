@@ -3170,18 +3170,8 @@ textarea.form-control-lg {
   color: #CCCCFF;
   border-color: #CCCCFF;
 }
-.btn-outline-primary-2{
-  color: #000;
-  border-color: #CCCCFF;
-  background-color: #CCCCFF;
-}
-.btn-outline-primary-2:hover{
-  color: #fff;
-  background-color: #CCCCFF;
-  border-color: #CCCCFF;
-}
 .btn-outline-primary:hover {
-  color: #fff;
+  color: #000;
   background-color: #CCCCFF;
   border-color: #CCCCFF;
 }
@@ -11326,8 +11316,14 @@ textarea.form-control-lg {
 }
 
 .footer {
-  padding-top: 1rem;
-  background-color: #151414;
+  background: linear-gradient(to right, rgba(204, 204, 255, 0.95), rgba(150, 210, 148, 0.95));
+}
+.footer a {
+  color: #fff;
+}
+.footer a i {
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 
 .intro-section {
