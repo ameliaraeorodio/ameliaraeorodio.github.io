@@ -36,7 +36,16 @@
     padding: 4px;
     margin: 10px;
 }
-
+.btn-secondary{
+    border-color: $primary;
+    background-color: $primary;
+    color: $white;
+}
+.btn-secondary:hover{
+    border-color: $primary;
+    background-color: $primary;
+    color: $black;
+}
 //form contents
 .form{
     padding: 3rem;

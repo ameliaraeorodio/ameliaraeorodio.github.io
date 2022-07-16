@@ -3,6 +3,8 @@
 
 .footer{
     @include gradient;
+    text-align: center;
+    font-weight:600;
     a{
         color: $white;
         i{

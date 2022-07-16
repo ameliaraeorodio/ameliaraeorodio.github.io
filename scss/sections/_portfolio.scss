@@ -1,6 +1,13 @@
 @use '../custom' as *;
 @use '../components/mix-ins' as *;
 
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+}
 //these will be transferred to the project portion of the website 
 .portfolio{
     padding: 2rem 0;
