@@ -8,7 +8,7 @@
 
 .contact-info{
     padding: 3rem;
-    margin: 1rem 0;
+    margin: 1rem;
 
     &__list{
         position: relative;
@@ -25,6 +25,32 @@
             font-size: 1.2rem;
         }
     }
+}
+.text{
+    border: 1.5px solid $primary;
+    padding: 4px;
+    margin: 10px;
+}
+.text:focus{
+    outline:none;
+}
+.msg{
+    border: 1.5px solid $primary;
+    padding: 4px;
+    margin: 10px;
+}
+.msg:focus{
+    outline:none;
+}
+.btn-secondary{
+    border-color: $primary;
+    background-color: $primary;
+    color: $white;
+}
+.btn-secondary:hover{
+    border-color: $primary;
+    background-color: $primary;
+    color: $black;
 }
 
 //form contents

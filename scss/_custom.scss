@@ -2,6 +2,8 @@
 
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
+$mutedBlue: #CCCCFF !default;
+$mutedGreen: #96D294 !default;
 $footer: #151414;
 
 //greyscale
@@ -18,8 +20,8 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$primary:       $purple !default;
-$secondary:     $pink !default;
+$primary:       $mutedBlue !default;
+$secondary:     $mutedGreen !default;
 
 //accordion overrides
 

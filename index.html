@@ -12,280 +12,249 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <!--ADD SCROLLSPY-->
     <!--start of navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-        <div class="container">
-            <!--change the navbar name with other name or loho-->
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--justify-content-end makes the text move to the right-->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                  <!--tbh change the name for introduction-->
-                <a class="nav-link" href="#">Biography</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contact</a>
-              </li>
-            </ul>
-            <button type="button" class = "rounded-pill btn-rounded">mom
-              <span><i class="fas fa-phone-alt"></i></span>
-            </button>
-          </div>
+    <nav id = "navbar-new" class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+          <!--change the navbar name with other name or loho-->
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--justify-content-end makes the text move to the right-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <!--tbh change the name for introduction-->
+              <a class="nav-link" href="#biography">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href = "#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!--start the intro section-->
-      <section id = "home" class = "intro-section" >
-        <div class="container">
-          <div class="row align-items-center text-white">
-            <!--start for intro content-->
-            <div class="col-md-6 intros"><h1 class="display-2">
-              <span class="display-2--intro">welcome</span>
-              <span class="display-2--description lh-base">poop :D</span>
-            </h1>
-            <button type="button" class = "rounded-pill btn-rounded">get in touch
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button></div>
-            <!--u can get these illustrations on manypixels.co-->
-            <!--start content video-->
-            <div class="col-md-6 intros text-end">
-              <div class="video-box">
-                <img src="/images/arts/Coding _Monochromatic.png" alt="videoIll" class = "img-fluid">
-                <a href="#" class="position-absolute top-50 start-50 translate-middle">
-                  <span>
-                    <i class="fas fa-play-circle"></i>
-                  </span>
-                  <span class="border-animation border-animation--border-1"></span>
-                  <span class="border-animation border-animation-border-2"></span>
-                </a>
-              </div>
+      </div>
+    </nav>
+    <div data-spy = "scroll" data-target = "navbar-new" data-offset="0" >
+      <!--come back here and figure this out-->
+    </div>
+    <!--start the intro section-->
+    <section id = "home" class = "intro-section" >
+      <div class="container">
+        <div class="row align-items-center text-white text-center">
+          <!--start for intro content-->
+          <div class="col-md-8 intros"><h1 class="display-2">
+            <span class="display-2--intro">AMELIA RAE ORODIO</span>
+            <p class="lead">Stony Brook University 2024</p>
+          </h1>
+          <!--u can get these illustrations on manypixels.co-->
+        </div>
+          <div class="col-md-4">
+            <img src="images/porfolio main pic.jpg" alt="">
+          </div>
+      </div>
+     
+    </section>
+    <!--HERE pushing this onto git and then we gonna delete these lines in case i wanna revert -->
+     
+    <!---start of the biography section-->
+    <section id = "biography" class = "biography">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="display-3 fw-bold text-capitalize">About Me</h1>
+          <!---insert a mf cute ass pic or two of yourself here-->
+          <div class="heading-line"></div>
+          <div class="row mt-5 mb-4 g-1 text-center">
+            <div class="col-md-12">
+              <button class="btn btn-secondary" type = "button" onclick = "window.open('https://1drv.ms/b/s!AkzwfUAwbGVj2BNdqYGWCfvdjBW_','_blank')">resume</button>
             </div>
           </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L30,208C60,224,120,256,180,234.7C240,213,300,139,360,144C420,149,480,235,540,250.7C600,267,660,213,720,176C780,139,840,117,900,133.3C960,149,1020,203,1080,218.7C1140,235,1200,213,1260,181.3C1320,149,1380,107,1410,85.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
-      </section>
-      <!--HERE pushing this onto git and then we gonna delete these lines in case i wanna revert -->
-      <!--part three under intro this part can turn into project display-->
-      <section id="companies" class="projects">
-        <div class="container">
-          <div class="row text-center">
-            <h4 class="fw-bold lead mb-3">some of my recent projects</h4>
-            <div class="heading-line mb-5"></div>
+          <div class="col-md-6">
+            <p class="lead-text">
+                Hello, I am Amelia Rae Orodio. I am a third year student at Stony Brook University.
+              I am cuurently a computer science major and I am with Java programming, web development, and data structures.
+            </p>
           </div>
-        </div>
-      <!--start company content-->
-      <div class="containter">
-        <div class="row">
-          <div class="col-md-4 col-lg-2">
-            <div class="projects__logo-box shadow-sm"><img src="images/projects/calc.png" alt="calc"></div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="projects__logo-box shadow-sm"><img src="images/projects/steth.jpg" alt="steth"></div>
-          </div>
-          <div class="col-md-4 col-lg-2">
-            <div class="projects__logo-box shadow-sm"><img src="images/projects/friends.png" alt="friends"></div>
+          <div class="col-md-6">
+            <p class="lead-text">
+                During my free time, I enjoy many of the arts, video games. I play piano, guitar, and ukulele. 
+              I also love to draw and paint in different mediums, favorite is acrylic.
+              Some of my favorite titles include Stardew Valley, Minecraft, Valorant, and Bloons TD 6.
+            </p>
           </div>
         </div>
       </div>
-    
-      </section>
-
-      <!--start experiences-->
-      <section id="experiences" class="experiences">
-        <div class="container">
-          <div class="row text-center">
-            <h1 class="display-3 fw-bold">Experience</h1>
-            <div class="heading-line mb-5"></div>
-          </div>
-
-        <!--description-->
-        
-          <div class="row pt-1 pb-2 mt-0 mb-3">
-            <div class="col-md-6 border-right">
-              <div class="bg-white p-3">
-                <h2 class="fw-bold text-capitalize text-center">
-                  Head Programmer of the all girls robotics team
-                </h2>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="bd-white p-4 text-start">
-                <p class="fw-light">Being head programmer meant recruiting the best programmers 
-                  during the application sessions, mentoring them through the use of java etc.
-                </p>
-              </div>
-            </div>
-          </div>
+    </section>
+    <!--start the portfolio-->
+    <section id="projects" class="portfolio">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="display-3 fw-bold text-capitalize">latest work</h1>
+          <div class="heading-line"></div>
+          <p class="led">
+            Hackathons, personal projects, class projects
+          </p>
         </div>
-
-        <!--start thhe content-->
-        <div class="container">
-          <!--start the marking contennt-->
-          <div class="row">
-            <div class="col-lg-6 col-sm-12 col-xs-12 experiences mt-4">
-              <div class="experiences__content">
-                <div class="icon d-block fas fa-paper-plane"></div>
-                <h3 class="display-3--title mt-1">marketing</h3>
-                <p class="lh-lg">yassssss just fill the space for a little boit this is probably where all the projects are gonna be.
-                  sjdlajlksjdlajsd asdjasd heg mon ajsdj uwehasfdf jasid.
-                </p>
-                <button type="button" class = "rounded-pill btn-rounded border-primary">learn more
-                  <span><i class="fas fa-arrow-right"></i></span>
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 col-xs-12 experiences mt-4 text-end">
-              <div class="experiences__piv">
-                <img src="images/projects/calc.png" alt="marketing ill" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <!--start the web dev content-->
-          <div class="row">
-            <div class="col-lg-6 col-sm-12 col-xs-12 experiences mt-4 text-start">
-              <div class="experiences__pic">
-                <img src="images/projects/calc.png" alt="marketing ill" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 col-xs-12 experiences mt-4">
-              <div class="experiences__content">
-                <div class="icon d-block fas fa-paper-plane"></div>
-                <h3 class="display-3--title mt-1">marketing</h3>
-                <p class="lh-lg">yassssss just fill the space for a little boit this is probably where all the projects are gonna be</p>
-                <button type="button" class = "rounded-pill btn-rounded border-primary">learn more
-                  <span><i class="fas fa-arrow-right"></i></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!--start the cloud computing content-->
-          <div class="row">
-            <div class="col-lg-6 col-sm-12 col-xs-12 experiences mt-4">
-              <div class="experiences__content">
-                <div class="icon d-block fas fa-paper-plane"></div>
-                <h3 class="display-3--title mt-1">marketing</h3>
-                <p class="lh-lg">yassssss just fill the space for a little boit this is probably where all the projects are gonna be</p>
-                <button type="button" class = "rounded-pill btn-rounded border-primary">learn more
-                  <span><i class="fas fa-arrow-right"></i></span>
-                </button>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12 col-xs-12 experiences mt-4 text-end">
-              <div class="experiences__pic">
-                <img src="images/projects/calc.png" alt="marketing ill" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>  
-      <!--start the portfolio-->
-      <section id="portfolio" class="portfolio">
-        <div class="container">
-          <div class="row text-center mt-5">
-            <h1 class="display-3 fw-bold text-capitalize">latest work</h1>
-            <div class="heading-line"></div>
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, voluptatibus! Quam, maxime.
-            </p>
-          </div>
-          <!--filter buttons-->
-          <div class="row mt-5 mb-4 g-3 text-center">
-            <div class="col-md-12">
-              <button class="btn btn-outline-primary" type="button">All</button>
-              <button class="btn btn-outline-primary" type="button">Games</button>
-              <button class="btn btn-outline-primary" type="button">Hackathons</button>
-            </div>
-          </div>
-      
-          <!--start portfolio content-->
-          <div class="row">
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-box shadow">
-                <img src="images/projects/calculator.png" alt="calc" title = "calc">
-                <div class="portfolio-info">
-                  <div class="caption">
-                    <h4>CalculatorUI</h4>
-                    <p>All</p>
+         
+        <!--start portfolio content-->
+        <div class="row">
+          <!---turn these parts into modals where u can write about what each one is and does-->
+          <div class="col-lg-4 col-md-4">
+            <div class="portfolio-box">
+              <img src="images/projects/portfolio.png" alt="website" title = "website">
+              
+              <div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="webModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="webModalLabel">Portfolio</h5>
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="images/projects/portfolio.png" style = "width: 300px; height: 300px;">
+                      <p class = "display-2--intro"><br> HTML, CSS, Javascript, Bootstrap</p>
+                      <p></p>
+                      <div class="heading-line"></div>
+                      <p>Originally, it was the result of a Bootstrap tutorial to broaden my knowledge. 
+                        After a few days of tweaking the site to my liking,
+                        it is now a personal portfolio!
+                      </p>
+                      <p></p>
+                      <p>July 2022</p>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="portfolio-info"  data-bs-toggle = "modal" data-bs-target="#webModal">
+                <div class="caption">
+                  <h4>Personal Website</h4>
+                  <p>Personal Project</p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="portfolio-box shadow">
-                <img src="images/projects/coolbeans.png" alt="cool beans" title = "cool beans">
-                <div class="portfolio-info">
-                  <div class="caption">
-                    <h4>Cool beans</h4>
-                    <p>Hackathons</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="portfolio-box">
+              <img src="images/projects/calculator.png" alt="calc" title = "calc">
+
+              <div class="modal fade" id = "calcModal" tabindex = "-1" aria-labelledby = "calcModalLabel" aria-hidden = "true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class = "modal-title" id = "calcModalLabel">CalculatorUI</h5>
+                      <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="images/projects/calculator.png" style = "width:300px; height: 300px;">
+                      <p></p>
+                      <p class = "display-2--intro">Java</p>
+                      <p></p>
+                      <div class="heading-line"></div>
+                      <p> While learning about stacks in my data structures course, our examples of how they are utilized was
+                        through balancing parenthesis and calculating an equation based on the rules of PEMDAS. After learning
+                        about it, I wanted to create a calculator UI that would put that lesson to use and become more comfortable
+                        with working on my own projects.
+                      </p>
+                      <p></p>
+                      <p>January 2022</p>
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div class="portfolio-info" data-bs-toggle = "modal" data-bs-target = "#calcModal">
+                <div class="caption">
+                  <h4>CalculatorUI</h4>
+                  <p>Personal Project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="portfolio-box">
+              <img src="images/projects/coolbeans.png" alt="cool beans" title = "cool beans">
+              <div class="modal fade" id = "coolBeansModal" tabindex = "-1" aria-labelledby = "coolBeansModalLabel" aria-hidden = "true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class = "modal-title" id = "coolBeansModalLabel">Cool Beans</h5>
+                      <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!--resize the calc pic-->
+                      <img src="images/projects/coolbeans.png" style = "width: 300px; height: 300px">
+                      <p></p>
+                      <p class = "display-2--intro">HTML, CSS, Javascript</p>
+                      <div class="heading-line"></div>
+                      <p>My first hackathon and project using HTMl, CSS, and Javascript. 
+                        Cool Beans is a portal catered towards the use of those in a medical office
+                        in order to pass of the information of the patient.
+                      </p>
+                      <p></p>
+                      <p>February 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info" data-bs-toggle = "modal" data-bs-target = "#coolBeansModal">
+                <div class="caption">
+                  <h4>Cool beans</h4>
+                  <p>Hackathons</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--start of contact me section-->
-      <section id="contact" class="contact-me">
-        <div class="containter">
-          <div class="row text-center">
-            <h1 class="display-3 fw-bold text-capitalize">contact me</h1>
-            <div class="heading-line"></div>
-            <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius vero voluptatum?</p>
+    <!--start of contact me section-->
+    <section id="contact" class="contact-me">
+      <div class="containter">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">contact me</h1>
+          <div class="heading-line"></div>
+          <p class="lead">Have any questions or concerns? Send me an email!</p>
+          <div class="col-12">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayvgovo" method="post">
+              <fieldset id="fs-frm-inputs">
+                <div class="col-12">
+                  <label for="full-name" class = "lead">Full Name</label>
+                  <input type="text" class = "text" name="name" id="full-name" placeholder="First and Last" required="">
+                </div>
+                <div class="col-12">
+                  <label for="email-address" class = "lead">Email Address</label>
+                  <input type="email" class = "text" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                </div>
+                <label for="message" class = "lead">Message</label>
+                <textarea rows="5" cols="70" class = "msg" name="message" id="message" required=""></textarea>
+                
+                <input type="hidden"  name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <input type="submit" class = "btn btn-secondary" value="Submit">
+            </form>
           </div>
-          <!--start the contact boxes-->
-          <div class="row text-white">
-            <div class="col-12 col-lg-6 gradient shadow p-3">
-              <div class="ending-description w-100">
-                <h4 class="display-4 fw-bold">Thank you for looking through this website!</h4>
-                <p class="lh-lg">If you would like to reach out, be sure to shoot me an email!</p>
-                <ul class="contact-info__list">
-                  <li>email: ameliaraeorodio@stonybrook.edu</li>
-                  <li>github: ameliaraeorodio</li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 bg-white shadow p-3">
-              <div class="form w-100 pb-2">
-                <h4 class="display-3--title mb-5">Send an email</h4>
-                <form action="#" class="row">
-                  <div class="col-lg-6 col-md-6 mb-3">
-                    <input type="text" placeholder="First Name" id = "inputFirstname" class = "shadow form-control form-control-lg">
-                  </div>
-                  <div class="col-lg-6 col-md-6 mb-3">
-                    <input type="text" placeholder="Last Name" id = "InputLastName" class = "shadow form-control form-control-lg">
-                  </div>
-                  <div class="col-lg-12 mb-3">
-                    <input type="email" placeholder="email address" id = "inputemail" class = "shadow form-control form-control-lg">
-                  </div>
-                  <div class="col-lg-12 mb-3">
-                    <textarea name="message" id="message" rows="8" class = "shadow form-control form-control-lg"></textarea>
-                  </div>
-                  <div class="text-center d-grid mt-1">
-                    <button type="button" class="btn-primary rounded-pill pt-3 pb-3">send
-                      <i class="fas fa-paper-plane"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        <!--start the contact boxes-->
+      </div>
+    </section>  
+<!---footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <p>Connect with me</p>
+          <div class="">
+            <a href="" onclick = "window.open('https://www.linkedin.com/in/amelia-rae-orodio/','_blank')"><i class="fab fa-linkedin"></i></a>
+            <a href="" onclick = "window.open('https://github.com/ameliaraeorodio/','_blank')"><i class="fab fa-github"></i></a>
         </div>
-      </section>
-      <script src="/assets/js/jquery.js"></script>
-      <script src="/assets/js/bootstrap.bundle.js"></script>
+      </div>
+    </footer>
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

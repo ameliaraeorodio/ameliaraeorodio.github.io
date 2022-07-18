@@ -1,11 +1,14 @@
 @use '../custom' as *;
 @use '../components/mix-ins' as *;
 
+
 .intro-section{
     @include gradient;
-    padding: 10rem 0 0 0;
-    width: 100%;
-    height: 100%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+img{
+    border-radius: 30px;
 }
 
 .intros{
