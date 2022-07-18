@@ -72,7 +72,7 @@
           <div class="heading-line"></div>
           <div class="row mt-5 mb-4 g-1 text-center">
             <div class="col-md-12">
-              <button class="btn btn-outline-primary" type = "button" onclick = "window.open('https://1drv.ms/b/s!AkzwfUAwbGVj2BNdqYGWCfvdjBW_','_blank')">resume</button>
+              <button class="btn btn-secondary" type = "button" onclick = "window.open('https://1drv.ms/b/s!AkzwfUAwbGVj2BNdqYGWCfvdjBW_','_blank')">resume</button>
             </div>
           </div>
           <div class="col-md-6">
@@ -100,14 +100,39 @@
           <p class="led">
             Hackathons, personal projects, class projects
           </p>
-        </div> 
+        </div>
+         
         <!--start portfolio content-->
         <div class="row">
           <!---turn these parts into modals where u can write about what each one is and does-->
           <div class="col-lg-4 col-md-4">
             <div class="portfolio-box">
               <img src="images/projects/portfolio.png" alt="website" title = "website">
-              <div class="portfolio-info">
+              
+              <div class="modal fade" id="webModal" tabindex="-1" aria-labelledby="webModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="webModalLabel">Portfolio</h5>
+                      </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="images/projects/portfolio.png" style = "width: 300px; height: 300px;">
+                      <p class = "display-2--intro"><br> HTML, CSS, Javascript, Bootstrap</p>
+                      <p></p>
+                      <div class="heading-line"></div>
+                      <p>Originally, it was the result of a Bootstrap tutorial to broaden my knowledge. 
+                        After a few days of tweaking the site to my liking,
+                        it is now a personal portfolio!
+                      </p>
+                      <p></p>
+                      <p>July 2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info"  data-bs-toggle = "modal" data-bs-target="#webModal">
                 <div class="caption">
                   <h4>Personal Website</h4>
                   <p>Personal Project</p>
@@ -118,7 +143,32 @@
           <div class="col-lg-4 col-md-4">
             <div class="portfolio-box">
               <img src="images/projects/calculator.png" alt="calc" title = "calc">
-              <div class="portfolio-info">
+
+              <div class="modal fade" id = "calcModal" tabindex = "-1" aria-labelledby = "calcModalLabel" aria-hidden = "true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class = "modal-title" id = "calcModalLabel">CalculatorUI</h5>
+                      <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="images/projects/calculator.png" style = "width:300px; height: 300px;">
+                      <p></p>
+                      <p class = "display-2--intro">Java</p>
+                      <p></p>
+                      <div class="heading-line"></div>
+                      <p> While learning about stacks in my data structures course, our examples of how they are utilized was
+                        through balancing parenthesis and calculating an equation based on the rules of PEMDAS. After learning
+                        about it, I wanted to create a calculator UI that would put that lesson to use and become more comfortable
+                        with working on my own projects.
+                      </p>
+                      <p></p>
+                      <p>January 2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info" data-bs-toggle = "modal" data-bs-target = "#calcModal">
                 <div class="caption">
                   <h4>CalculatorUI</h4>
                   <p>Personal Project</p>
@@ -129,7 +179,30 @@
           <div class="col-lg-4 col-md-4">
             <div class="portfolio-box">
               <img src="images/projects/coolbeans.png" alt="cool beans" title = "cool beans">
-              <div class="portfolio-info">
+              <div class="modal fade" id = "coolBeansModal" tabindex = "-1" aria-labelledby = "coolBeansModalLabel" aria-hidden = "true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class = "modal-title" id = "coolBeansModalLabel">Cool Beans</h5>
+                      <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!--resize the calc pic-->
+                      <img src="images/projects/coolbeans.png" style = "width: 300px; height: 300px">
+                      <p></p>
+                      <p class = "display-2--intro">HTML, CSS, Javascript</p>
+                      <div class="heading-line"></div>
+                      <p>My first hackathon and project using HTMl, CSS, and Javascript. 
+                        Cool Beans is a portal catered towards the use of those in a medical office
+                        in order to pass of the information of the patient.
+                      </p>
+                      <p></p>
+                      <p>February 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-info" data-bs-toggle = "modal" data-bs-target = "#coolBeansModal">
                 <div class="caption">
                   <h4>Cool beans</h4>
                   <p>Hackathons</p>
