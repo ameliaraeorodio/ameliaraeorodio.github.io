@@ -43,20 +43,43 @@ function Stars(){
                 <Typography>this is me <br/>(if you even care)</Typography>
             </Box>
             <Box sx = {starCollective}>
-                <Stars2ascii sx = {star}/>
-                <Typography>resume</Typography>
+                <a 
+                    href="/resume.pdf" 
+                    alt="connect with me on linkedin :p"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                    <Stars2ascii sx={star} />
+                    <Typography>resume</Typography>
+                </a>
             </Box>
             <Box sx = {starCollective}>
                 <Stars3ascii sx = {star}/>
                 <Typography>about me :3</Typography>
             </Box>
-            <Box sx = {starCollective}>
-                <Stars1ascii sx = {star}/>
-                <Typography>linkedin</Typography>
+            <Box sx={starCollective}>
+                <a 
+                    href="https://www.linkedin.com/in/amelia-rae-orodio" 
+                    alt="connect with me on linkedin :p"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                    <Stars1ascii sx={star} />
+                    <Typography>linkedin</Typography>
+                </a>
             </Box>
-            <Box sx = {starCollective}>
-                <Stars2ascii sx = {star}/>
-                <Typography >github</Typography>
+            <Box sx={starCollective}>
+                <a 
+                    href="https://github.com/ameliaraeorodio" 
+                    alt="connect with me on linkedin :p"
+                    target= "_blank"
+                    style={{ textDecoration: 'none', color: 'inherit' }}  // Ensures the text styling stays the same
+                >
+                    <Stars2ascii sx={star} />
+                    <Typography>github</Typography>
+                </a>
             </Box>
             <Box sx = {starCollective}>
                 <Stars3ascii sx = {star}/>

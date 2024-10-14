@@ -3,7 +3,8 @@ import { Dialog, DialogTitle, DialogContent, Typography } from '@mui/material';
 import { Box } from '@mui/material';
 import {Button} from '@mui/material';
 import {Grid} from '@mui/material';
-import {Tooltip} from '@mui/material';
+import {Tooltip, tooltipClasses} from '@mui/material';
+import {styled} from '@mui/material';
 function ThisIsMeModal({ open, handleClose }) {
     const dialog = {
         backgroundColor: "#8dc9fc",
@@ -109,7 +110,20 @@ function ThisIsMeModal({ open, handleClose }) {
         '#A8A82A', '#6FA82A', '#48A82A', '#2AA832', '#2AA874', '#2AA8A8', '#2A7AA8', '#2A4EA8', '#372AA8', '#5D2AA8',
         '#802AA8', '#A82AA2', '#A82A85', '#A82A65', '#D10000', '#D17A00', '#88D100', '#2DD100'
     ];
-
+    const imgStyle = {
+        width: "auto",  // Adjust the size as needed
+        height: "auto",  // Keeps the aspect ratio
+        border: "2px solid #3b81db",  // Border similar to the color boxes
+        padding: "0",
+        border: "2px solid #3b81db",
+        borderRadius:"0px",
+        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)",
+        backgroundColor: "#f0f0f0",
+        boxShadow: `
+            inset 2px 2px 0 rgba(0, 0, 0, 0.6),
+            inset -1px -1px 0 rgba(255, 255, 255, 0.7) 
+        `,
+    };
     const boxStyle = {
         minWidth: "20px",
         minHeight: "20px",
@@ -131,10 +145,24 @@ function ThisIsMeModal({ open, handleClose }) {
             `,
         }
     };
+    const PinkTooltip = styled(({ className, ...props }) => (
+        <Tooltip {...props} classes={{ popper: className }} />
+      ))(({ theme }) => ({
+        [`& .${tooltipClasses.tooltip}`]: {
+          backgroundColor: "#f7afbd",
+          color: 'white',
+          boxShadow: theme.shadows[1],
+          fontSize: 11,
+        },
+      }));
     return (
         <Dialog
         open={open} 
-        onClose={handleClose}>
+        onClose={handleClose}
+        BackdropProps={{
+            style: { backgroundColor: "transparent" }
+          }}
+        >
             <DialogTitle
                 sx = {dialog}
             >
@@ -215,7 +243,9 @@ function ThisIsMeModal({ open, handleClose }) {
                                         '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
                                         '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
                                         fontSmooth: 'neveDefine Custom Colors >>',
-                                    }}>Define Custom Colors >></Button>
+                                    }}
+                                    onClick={handleClose}
+                                    >Define Custom Colors >></Button>
                                 <Box sx = {{...closingButtonsGroup,
                                      display: "flex",
                                      justifyContent: "flex-start",  // Aligns items to the left
@@ -248,11 +278,17 @@ function ThisIsMeModal({ open, handleClose }) {
                                 </Box>
                             </Box>
                         </Box>
-                        <Tooltip title="this is me btw" arrow>  {/* Tooltip with hover message */}
-                            <img
-                            src = "websitepic.jpg"
-                            />
-                        </Tooltip>
+                        <PinkTooltip followCursor
+                        title = "eek!!! im stuck in this paint machine!"
+                        >
+                            <Box>
+                                <img
+                                src = "websitepic.jpg"
+                                alt = "this is me btw"
+                                style = {imgStyle}
+                                />
+                            </Box>
+                        </PinkTooltip>
                     </Box>
                 </Box>
             </DialogContent>
