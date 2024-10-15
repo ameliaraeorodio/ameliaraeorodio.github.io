@@ -4,7 +4,10 @@
   color: #f7afbd;
   font-size: 10vh;
 }
-
+.AboutMe {
+  text-align: center;
+  color: #f7afbd;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,7 +29,7 @@
 
 .kanna{
   position: absolute;
-  bottom: 25vh;
+  bottom: 26vh;
   left: 1vw;
 }
 
@@ -41,12 +44,25 @@
   display: flex;
   flex-direction: row;
   margin-left: 2vw;
-  padding-top: 25vh;
+  margin-top: 1vh;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.footer{
+  margin-top: -2vh;
+}
+
+.cat {
+    display: inline-block; /* Makes the div as wide as the content */
+    padding: 0; /* Remove any extra padding */
+    white-space: pre; /* Preserve spacing in the ASCII art */
+    font-family: monospace, fixed; /* Keep the monospace font */
+    margin-top: 5vh;
+    margin-right: -29vw;
+  }
 
 @keyframes App-logo-spin {
   from {

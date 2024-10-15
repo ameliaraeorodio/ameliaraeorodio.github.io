@@ -59,6 +59,10 @@ function Stars(){
                 <Typography>about me :3</Typography>
             </Box>
             <Box sx={starCollective}>
+                <Stars1ascii sx={star} />
+                <Typography>my work</Typography>
+            </Box>
+            <Box sx={starCollective}>
                 <a 
                     href="https://www.linkedin.com/in/amelia-rae-orodio" 
                     alt="connect with me on linkedin :p"
@@ -66,7 +70,7 @@ function Stars(){
                     rel="noopener noreferrer" 
                     style={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                    <Stars1ascii sx={star} />
+                    <Stars2ascii sx={star} />
                     <Typography>linkedin</Typography>
                 </a>
             </Box>
@@ -77,13 +81,9 @@ function Stars(){
                     target= "_blank"
                     style={{ textDecoration: 'none', color: 'inherit' }}  // Ensures the text styling stays the same
                 >
-                    <Stars2ascii sx={star} />
+                    <Stars3ascii sx={star} />
                     <Typography>github</Typography>
                 </a>
-            </Box>
-            <Box sx = {starCollective}>
-                <Stars3ascii sx = {star}/>
-                <Typography>contact me</Typography>
             </Box>
 
             <ThisIsMeModal open={open} handleClose={handleClose} />

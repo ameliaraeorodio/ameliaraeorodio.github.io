@@ -13,3 +13,8 @@ code {
 .starstext{
   font-size: 10px;
 }
+.test{
+  font-family: "Jacquard 12", system-ui;
+  color: #f7afbd;
+  font-size: 10vh;
+}
