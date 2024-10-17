@@ -9,7 +9,7 @@ import {Box} from '@mui/material';
 import { Tooltip, tooltipClasses } from '@mui/material';
 import {styled} from '@mui/material';
 import {Typography} from '@mui/material';
-import CatAscii from '../catascii';
+
 function Homepage() {
 
   let welcome = ["welcome inside my mind", "where good things are great",
@@ -53,11 +53,7 @@ function Homepage() {
             delay: 75,
           }}
         />
-      <PinkTooltip title = "plz talk to me" followCursor>
-      <span style={{ display: 'inline-block' }}>
-        <CatAscii />
-      </span>
-      </PinkTooltip >
+      
       <div className = "flowergarden">
         <Flowersascii/>
         <Flowersascii/>
@@ -65,8 +61,8 @@ function Homepage() {
       </div>
       <Box className = "footer">
         <Typography
-        sx = {{fontSize: "2vh"}}
-        >amelia rae orodio's porfolio</Typography>
+        sx = {{fontSize: "3vh", fontFamily: "Cormorant, serif" }}
+        >*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*amelia rae orodio's portfolio*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*</Typography>
       </Box>
     </div>
   );
