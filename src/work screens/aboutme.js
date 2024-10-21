@@ -54,10 +54,11 @@ function AboutMe(){
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        padding: "1rem" 
     }
     const row = {
         display: "flex",
-        justifyContent: "space-between", // Use space-between to distribute space evenly
+        justifyContent: "space-between",
         alignItems: "center",
         flexDirection: "row",
     }
@@ -97,16 +98,71 @@ function AboutMe(){
   const handleBackClick = () => {
     navigate('/');
   };
+
+  const ResponsiveBox = styled('div')(({ theme }) => ({
+    padding: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1rem',
+      padding: theme.spacing(1),
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.5rem',
+      padding: theme.spacing(3),
+    },
+    [theme.breakpoints.up('lg')]: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      flexDirection: "column",
+      padding: "1rem" 
+    },
+  }));
+  const PictureAndParagraph = styled('div')(({ theme }) => ({
+    padding: theme.spacing(2),
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1rem',
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexDirection: "column",
+    },
+    [theme.breakpoints.up('md')]: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexDirection: "column",
+      fontSize: '1.5rem',
+    },
+    [theme.breakpoints.up('lg')]: {
+      ...row,
+      width: "90%", 
+      gap: "2vw",
+    },
+  }));
+  const Text = styled('div')(({ theme }) => ({
+    lineHeight: 1,
+    [theme.breakpoints.down('sm')]: {
+      minHeight: "4rem",
+      fontSize: "2rem"
+    },
+    [theme.breakpoints.up('md')]: {
+      minHeight: "8rem",
+      fontSize: "4rem"
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: "8vh"
+    },
+  }));
     return(
-        <Box sx = {col}>
-          <Box sx = {{...row, padding: "1rem",width: "90%", 
+        <ResponsiveBox>
+          <Box sx = {{...row, margin: "0.5rem",width: "90%", 
             gap: "2vw",}}>
             <PinkTooltip title = "back to home">
-              <IconButton onClick={handleBackClick}>
+              <IconButton sx ={{bottom:"2vh"}} onClick={handleBackClick}>
                 <ArrowBackIcon/>
               </IconButton>
             </PinkTooltip>
-            <Box className = "test" sx = {{flex: 1}}>
+            <Text className = "test" sx = {{flex: 1}}>
                 <Typewriter
                 options={{
                 strings: welcome,
@@ -116,11 +172,9 @@ function AboutMe(){
                 delay: 75,
                 }}
                 />
-            </Box>
+            </Text>
           </Box>
-            <Box sx = {{...row,
-            width: "90%", 
-            gap: "2vw",}}>
+            <PictureAndParagraph>
                 <ImageList sx={{flex: 1, height: "100%", padding: 0, margin: 0 }} cols={3}>
                     {itemData.map((item) => (
                       <PinkTooltip title = {item.title} followCursor>
@@ -194,8 +248,8 @@ function AboutMe(){
                       }}
                   />
               </Box>
-            </Box>
-        </Box>
+            </PictureAndParagraph>
+        </ResponsiveBox>
     );
 }
 
