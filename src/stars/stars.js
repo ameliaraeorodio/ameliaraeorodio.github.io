@@ -22,7 +22,7 @@ function Stars(){
         flexDirection: "row",
         justifyContent: "space-around",
         maxWidth: "100vw",
-        maxHeigth: "10vh"
+        maxHeigth: "10vh",
     }
     const star = {
         marginTop:"-35vh",
@@ -46,6 +46,9 @@ function Stars(){
     const navigate = useNavigate();
     const handleAboutMeClick = () => {
         navigate('/about-me');
+    };
+    const handleWorksClick = () => {
+        navigate('/works');
     };
     return(
         <Box sx={box}>
@@ -81,6 +84,7 @@ function Stars(){
                 <Typography sx={{ fontFamily: "Cormorant, serif" }}>about me </Typography>
             </Box>
             <Box sx={starCollective}
+            onClick = {handleWorksClick}
             onMouseEnter={() => setHoveredStar('my work')}
             onMouseLeave={() => setHoveredStar(null)}
             >

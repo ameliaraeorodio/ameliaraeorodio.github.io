@@ -90,7 +90,7 @@ function AboutMe(){
       });
   };
     const handleCloseSnackbar = () => {
-      setSnackbarOpen(false);  // Close Snackbar
+      setSnackbarOpen(false);  
   };
 
   const navigate = useNavigate();
