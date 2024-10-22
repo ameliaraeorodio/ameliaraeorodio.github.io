@@ -22,3 +22,27 @@ code {
   font-family: "Cormorant", serif;
   font-size: 1rem;
 }
+
+.star-container {
+  font-family: monospace, fixed;
+  font-weight: bold;
+  font-size: 0.4vh; /* Base size for small screens */
+}
+
+@media (min-width: 600px) {
+  .star-container {
+      font-size: 0.6vh; /* Medium screens (e.g., tablets) */
+  }
+}
+
+@media (min-width: 900px) {
+  .star-container {
+      font-size: 0.8vh; /* Large screens (e.g., desktops) */
+  }
+}
+
+@media (min-width: 1200px) {
+  .star-container {
+      font-size: 1vh; /* Extra large screens */
+  }
+}

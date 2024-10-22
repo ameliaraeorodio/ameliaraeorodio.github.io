@@ -30,8 +30,8 @@ function Homepage() {
   return (
     <div className="App">
       <header className="App-header">
-      </header>
       <Stars></Stars>
+      </header>
       <PinkTooltip title = "this is my favorite anime character, kanna"
       followCursor      
       >

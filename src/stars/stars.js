@@ -6,7 +6,7 @@ import { Typography } from '@mui/material';
 import ThisIsMeModal from '../thisismemodal';
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-
+import {Grid} from '@mui/material';
 function Stars(){
     const [open, setOpen] = useState(false);
     const [hoveredStar, setHoveredStar] = useState(null)
@@ -23,10 +23,7 @@ function Stars(){
         justifyContent: "space-around",
         maxWidth: "100vw",
         maxHeigth: "10vh",
-    }
-    const star = {
         marginTop:"-35vh",
-        padding: "0",
     }
     const starCollective = {
         display: "flex",
@@ -52,74 +49,77 @@ function Stars(){
     };
     return(
         <Box sx={box}>
-            <Box sx = {starCollective}
-            onClick = {handleClick}
-            onMouseEnter={() => setHoveredStar('this is me')}
-            onMouseLeave={() => setHoveredStar(null)}
-            >
-                <Stars1ascii sx = {star}/>
-                <Typography sx={{ fontFamily: "Cormorant, serif" }}>this is me <br/>(if you even care)</Typography>
-            </Box>
-            <Box sx = {starCollective}
-            onMouseEnter={() => setHoveredStar('resume')}
-            onMouseLeave={() => setHoveredStar(null)}
-            >
-                <a 
-                    href="/resume.pdf" 
-                    alt="connect with me on linkedin :p"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    style={{ textDecoration: 'none', color: 'inherit', cursor: "zoom-in" }}
-                >
-                    <Stars2ascii sx={star} />
-                    <Typography sx={{ fontFamily: "Cormorant, serif" }}>resume</Typography>
-                </a>
-            </Box>
-            <Box sx = {starCollective}
-            onClick = {handleAboutMeClick}
-            onMouseEnter={() => setHoveredStar('about me')}
-            onMouseLeave={() => setHoveredStar(null)}
-            >
-                <Stars3ascii sx = {star}/>
-                <Typography sx={{ fontFamily: "Cormorant, serif" }}>about me </Typography>
-            </Box>
-            <Box sx={starCollective}
-            onClick = {handleWorksClick}
-            onMouseEnter={() => setHoveredStar('my work')}
-            onMouseLeave={() => setHoveredStar(null)}
-            >
-                <Stars1ascii sx={star} />
-                <Typography sx={{ fontFamily: "Cormorant, serif" }}>my work</Typography>
-            </Box>
-            <Box sx={starCollective}
-            onMouseEnter={() => setHoveredStar('linkedin')}
-            onMouseLeave={() => setHoveredStar(null)}
-            >
-                <a 
-                    href="https://www.linkedin.com/in/amelia-rae-orodio" 
-                    alt="connect with me on linkedin :p"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    style={{ textDecoration: 'none', color: 'inherit' , cursor: "zoom-in"}}
-                >
-                    <Stars2ascii sx={star} />
-                    <Typography sx={{ fontFamily: "Cormorant, serif" }}>linkedin</Typography>
-                </a>
-            </Box>
-            <Box sx={starCollective}
-            onMouseEnter={() => setHoveredStar('github')}
-            onMouseLeave={() => setHoveredStar(null)}
-            >
-                <a 
-                    href="https://github.com/ameliaraeorodio" 
-                    alt="connect with me on linkedin :p"
-                    target= "_blank"
-                    style={{ textDecoration: 'none', color: 'inherit', cursor: "zoom-in" }}  // Ensures the text styling stays the same
-                >
-                    <Stars3ascii sx={star} />
-                    <Typography sx={{ fontFamily: "Cormorant, serif" }}>github</Typography>
-                </a>
-            </Box>
+            <Grid container spacing={2} justifyContent="center">
+                <Grid sm={6} md={4} lg={2}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", cursor: "zoom-in" }}
+                        onClick={handleClick}
+                        onMouseEnter={() => setHoveredStar('this is me')}
+                        onMouseLeave={() => setHoveredStar(null)}
+                    >
+                        <Stars1ascii />
+                        <Typography sx={{ fontFamily: "Cormorant, serif" }}>this is me <br/>(if you even care)</Typography>
+                    </Box>
+                </Grid>
+                
+                <Grid item sm={6} md={4} lg={2}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+                        onMouseEnter={() => setHoveredStar('resume')}
+                        onMouseLeave={() => setHoveredStar(null)}
+                    >
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', cursor: "zoom-in" }}>
+                            <Stars2ascii />
+                            <Typography sx={{ fontFamily: "Cormorant, serif" }}>resume</Typography>
+                        </a>
+                    </Box>
+                </Grid>
+
+                <Grid sm={6} md={4} lg={2}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", cursor: "zoom-in" }}
+                        onClick={handleAboutMeClick}
+                        onMouseEnter={() => setHoveredStar('about me')}
+                        onMouseLeave={() => setHoveredStar(null)}
+                    >
+                        <Stars3ascii />
+                        <Typography sx={{ fontFamily: "Cormorant, serif" }}>about me</Typography>
+                    </Box>
+                </Grid>
+
+                <Grid sm={6} md={4} lg={2}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", cursor: "zoom-in" }}
+                        onClick={handleWorksClick}
+                        onMouseEnter={() => setHoveredStar('my work')}
+                        onMouseLeave={() => setHoveredStar(null)}
+                    >
+                        <Stars1ascii />
+                        <Typography sx={{ fontFamily: "Cormorant, serif" }}>my work</Typography>
+                    </Box>
+                </Grid>
+
+                <Grid sm={6} md={4} lg={2}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+                        onMouseEnter={() => setHoveredStar('linkedin')}
+                        onMouseLeave={() => setHoveredStar(null)}
+                    >
+                        <a href="https://www.linkedin.com/in/amelia-rae-orodio" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', cursor: "zoom-in" }}>
+                            <Stars2ascii />
+                            <Typography sx={{ fontFamily: "Cormorant, serif" }}>linkedin</Typography>
+                        </a>
+                    </Box>
+                </Grid>
+
+                <Grid item sm={6} md={4} lg={2}>
+                    <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+                        onMouseEnter={() => setHoveredStar('github')}
+                        onMouseLeave={() => setHoveredStar(null)}
+                    >
+                        <a href="https://github.com/ameliaraeorodio" target="_blank" style={{ textDecoration: 'none', color: 'inherit', cursor: "zoom-in" }}>
+                            <Stars3ascii />
+                            <Typography sx={{ fontFamily: "Cormorant, serif" }}>github</Typography>
+                        </a>
+                    </Box>
+                </Grid>
+            </Grid>
+
 
             <ThisIsMeModal open={open} handleClose={handleClose} />
             {hoveredStar && (
