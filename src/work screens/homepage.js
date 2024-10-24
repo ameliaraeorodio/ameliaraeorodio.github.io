@@ -42,6 +42,18 @@ function Homepage() {
       fontSize: "8vh"
     },
   }));
+  const Footer = styled(Typography)(({ theme }) => ({
+    fontFamily: "Cormorant, serif" ,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: "0.7vh"
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: "1.2vh"
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: "3vh"
+    },
+  }));
   return (
     <div className="App">
       <header className="App-header">
@@ -74,11 +86,9 @@ function Homepage() {
         <Flowersascii/>
         <Flowersascii/>
       </div>
-      <Box className = "footer">
-        <Typography
-        sx = {{fontSize: "3vh", fontFamily: "Cormorant, serif" }}
-        >.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*amelia rae orodio's portfolio*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.</Typography>
-      </Box>
+        <Footer
+        >.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.*amelia rae orodio's portfolio*.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.**.·:·.✧ ✦ ✧.·:·.
+        </Footer>
     </div>
   );
 }

@@ -38,6 +38,12 @@
   bottom: 25vh;
   right: 1vw;
 }
+.flowergarden{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2vw;
+  margin-top: 25vh;
+}
 
 @media (max-width: 1024px) {
   .kanna {
@@ -49,25 +55,28 @@
     top: 57vh;
     right: 2vw;
   }
+
+  .flowergarden{
+    margin-left: 4vw;
+    margin-top: 37vh;
+  }
 }
 
 /* For small screens (e.g., mobile phones) */
 @media (max-width: 768px) {
   .kanna {
-    top: 45vh;
+    top: 50vh;
     left: 3vw;
   }
 
   .me {
-    top: 45vh;
+    top: 50vh;
     right: 3vw;
   }
-}
-.flowergarden{
-  display: flex;
-  flex-direction: row;
-  margin-left: 2vw;
-  margin-top: 25vh;
+  .flowergarden{
+    margin-left: 4vw;
+    margin-top: 43vh;
+  }
 }
 
 .App-link {

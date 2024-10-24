@@ -40,6 +40,11 @@ code {
   font-weight: bold;
   font-size:0.4vh;
 }
+.flowerTest{
+  font-family: monospace, fixed; 
+  font-weight: bold; 
+  font-size: 1.6vh
+}
 @media (max-width: 1024px) {
   .kannaTest {
     font-size:0.5vh;
@@ -47,6 +52,9 @@ code {
 
   .meTest {
     font-size:0.3vh;
+  }
+  .flowerTest {
+    font-size:0.63vh;
   }
   .star-container {
     font-size: 0.8vh;
@@ -61,6 +69,9 @@ code {
 
   .meTest {
     font-size:0.3vh;
+  }
+  .flowerTest {
+    font-size:0.4vh;
   }
   .star-container {
     font-size: 0.4vh; /* Extra large screens */
