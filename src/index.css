@@ -25,24 +25,44 @@ code {
 
 .star-container {
   font-family: monospace, fixed;
+  font-weight: bold; /* Base size for small screens */
+  font-size: 1vh;
+}
+
+
+.kannaTest{
+  font-family: monospace, fixed; 
+  font-weight: bold; 
+  font-size: 0.5vh
+}
+.meTest{
+  font-family: monospace, fixed; 
   font-weight: bold;
-  font-size: 0.4vh; /* Base size for small screens */
+  font-size:0.4vh;
 }
-
-@media (min-width: 600px) {
-  .star-container {
-      font-size: 0.6vh; /* Medium screens (e.g., tablets) */
+@media (max-width: 1024px) {
+  .kannaTest {
+    font-size:0.5vh;
   }
-}
 
-@media (min-width: 900px) {
-  .star-container {
-      font-size: 0.8vh; /* Large screens (e.g., desktops) */
+  .meTest {
+    font-size:0.3vh;
   }
+  .star-container {
+    font-size: 0.8vh;
+}
 }
 
-@media (min-width: 1200px) {
+/* For small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .kannaTest {
+    font-size:0.4vh;
+  }
+
+  .meTest {
+    font-size:0.3vh;
+  }
   .star-container {
-      font-size: 1vh; /* Extra large screens */
+    font-size: 0.4vh; /* Extra large screens */
   }
 }

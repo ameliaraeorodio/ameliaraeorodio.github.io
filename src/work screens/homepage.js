@@ -27,14 +27,28 @@ function Homepage() {
       fontSize: 11,
     },
   }));
+  const Text = styled('div')(({ theme }) => ({
+    
+    [theme.breakpoints.down('sm')]: {
+      minHeight: "4rem",
+      fontSize: "2rem"
+    },
+    [theme.breakpoints.up('md')]: {
+      minHeight: "6rem",
+      fontSize: "4rem"
+    },
+    [theme.breakpoints.up('lg')]: {
+      minHeight: "0rem",
+      fontSize: "8vh"
+    },
+  }));
   return (
     <div className="App">
       <header className="App-header">
       <Stars></Stars>
       </header>
       <PinkTooltip title = "this is my favorite anime character, kanna"
-      followCursor      
-      >
+      followCursor>
         <Box>
           <Asciiart/>
         </Box>
@@ -44,16 +58,17 @@ function Homepage() {
           <MeAscii/>
         </Box>
       </PinkTooltip>
-      <Typewriter className="welcomes"
-          options={{
-            strings: welcome,
-            autoStart: true,
-            loop: true,
-            deleteSpeed: 50,
-            delay: 75,
-          }}
-        />
-      
+      <Text>
+      <Typewriter
+        options={{
+          strings: welcome,
+          autoStart: true,
+          loop: true,
+          deleteSpeed: 50,
+          delay: 75,
+        }}
+      />
+      </Text>      
       <div className = "flowergarden">
         <Flowersascii/>
         <Flowersascii/>
