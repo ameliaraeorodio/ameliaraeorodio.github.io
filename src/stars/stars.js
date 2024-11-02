@@ -13,7 +13,7 @@ function Stars(){
     const handleClick = () => {
         setOpen(true);
     };
-
+    
     const handleClose = () => {
         setOpen(false); 
     };

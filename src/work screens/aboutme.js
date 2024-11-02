@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../App.css';
-import { Box, Typography, TextField, IconButton, styled, Snackbar } from '@mui/material';
+import { Box, Typography, IconButton, styled, Snackbar } from '@mui/material';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Typewriter from 'typewriter-effect';
@@ -15,47 +15,49 @@ function AboutMe(){
         {
           img: 'strawberry.jpeg',
           title: 'strawberry tiramisu <3',
+          key:1
         },
         {
           img: 'ph.jpeg',
           title: 'philippines',
+          key:2
         },
         {
           img: 'train.jpeg',
           title: 'me waiting for the train',
+          key:3
         },
         {
           img: 'soop.jpeg',
           title: 'my baby soopi joe cool drinking matcha',
+          key:4
         },
         {
           img: 'pretty.jpeg',
           title: 'first pic of me on my digital camera',
+          key:5
         },
         {
           img: 'mandy.jpeg',
           title: 'dj set',
+          key:6
         },
         {
           img: 'mono.jpeg',
           title: 'at lunch :p',
+          key:7
         },
         {
           img: 'phkittie.jpeg',
           title: ':3',
+          key:8
         },
         {
           img: 'nums.jpeg',
           title: 'nummies',
+          key:9
         },
       ];
-    const col = {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        padding: "1rem" 
-    }
     const row = {
         display: "flex",
         justifyContent: "space-between",
@@ -177,7 +179,7 @@ function AboutMe(){
             <PictureAndParagraph>
                 <ImageList sx={{flex: 1, height: "100%", padding: 0, margin: 0 }} cols={3}>
                     {itemData.map((item) => (
-                      <PinkTooltip title = {item.title} followCursor>
+                      <PinkTooltip key = {item.key} title = {item.title} followCursor>
                         <ImageListItem key={item.img}>
                           <img
                           srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
@@ -215,12 +217,26 @@ function AboutMe(){
                       'column',  
                       }}>
                       <Typography sx={{ fontFamily: "Cormorant, serif" }}>contact me:</Typography>
-                      <a
-                          onClick={copyEmailToClipboard}
-                          style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}
+                      <Box
+                        onClick={copyEmailToClipboard}
+                        role="button"
+                        tabIndex={0}
+                        onKeyPress={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            copyEmailToClipboard();
+                          }
+                        }}
+                        sx={{
+                          textDecoration: 'underline',
+                          color: 'inherit',
+                          cursor: 'pointer',
+                          '&:hover': { color: '#d47373' }, 
+                        }}
                       >
-                          <Typography sx={{ fontFamily: "Cormorant, serif" }}>ameliaraeorodio@gmail.com</Typography>
-                      </a>
+                        <Typography sx={{ fontFamily: "Cormorant, serif" }}>
+                          ameliaraeorodio@gmail.com
+                        </Typography>
+                      </Box>
                     </Box>
                     <PinkTooltip title = "plz talk to me" followCursor>
                         <span style={{display: 'inline-block'}}>

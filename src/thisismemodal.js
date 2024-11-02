@@ -24,16 +24,16 @@ function ThisIsMeModal({ open, handleClose }) {
         right: "0px",
         backgroundColor: "#8dc9fc",
         color: "black",
-        transition: "transform 0.2s, box-shadow 0.2s",  // Smooth transition on press
+        transition: "transform 0.2s, box-shadow 0.2s",  
         borderRight: "2px solid #7abaf0",
         borderBottom: "2px solid #7abaf0",
         borderRadius:"1px" ,
-        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)",  // Outer shadow and inner highlight
+        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)",
         '&:hover': {
             backgroundColor: "#6bb1f2",
         },
         '&:active': {
-            transform: "translateY(2px)",  // Moves down slightly to simulate press
+            transform: "translateY(2px)", 
             boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(0, 0, 0, 0.2)",
         },
         [theme.breakpoints.down('sm')]: {
@@ -102,8 +102,8 @@ function ThisIsMeModal({ open, handleClose }) {
 
       const OkCancel = styled(Box)(({ theme }) => ({
         display: "flex",
-        justifyContent: "flex-start",  // Aligns items to the left
-        alignItems: "center",  // Vertically centers the items
+        justifyContent: "flex-start",
+        alignItems: "center", 
         flexDirection: "row",
         gap: "10px",
         [theme.breakpoints.up('xs')]: {
@@ -129,14 +129,14 @@ function ThisIsMeModal({ open, handleClose }) {
         borderBottom: "2px solid #7abaf0",
         borderRadius:"1px" ,
         color:"black",
-        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)",  // Outer shadow and inner highlight
-        transition: "transform 0.2s, box-shadow 0.2s",  // Smooth transition on press
+        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)", 
+        transition: "transform 0.2s, box-shadow 0.2s",
         '&:hover': {
             backgroundColor: "#6bb1f2",
         },
         '&:active': {
-            transform: "translateY(2px)",  // Moves down slightly to simulate press
-            boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(0, 0, 0, 0.2)",  // Decreased shadow for pressed effect
+            transform: "translateY(2px)", 
+            boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(0, 0, 0, 0.2)",
         },
         [theme.breakpoints.up('xs')]: {
             marginTop: "1vh",
@@ -167,14 +167,13 @@ function ThisIsMeModal({ open, handleClose }) {
         borderRight: "2px solid #7abaf0",
         borderBottom: "2px solid #7abaf0",
         borderRadius:"1px" ,
-        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)",  // Outer shadow and inner highlight
-        transition: "transform 0.2s, box-shadow 0.2s",  // Smooth transition on press
+        boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)", 
         '&:hover': {
             backgroundColor: "#6bb1f2",
         },
         '&:active': {
-            transform: "translateY(2px)",  // Moves down slightly to simulate press
-            boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(0, 0, 0, 0.2)",  // Decreased shadow for pressed effect
+            transform: "translateY(2px)",  
+            boxShadow: "1px 1px 5px rgba(0, 0, 0, 0.3), inset 1px 1px 2px rgba(0, 0, 0, 0.2)",  
         },
         [theme.breakpoints.up('xs')]: {
             marginTop: "2vh",
@@ -211,30 +210,30 @@ function ThisIsMeModal({ open, handleClose }) {
     ];
     const Image = styled(Box)(({ theme }) => ({
         objectFit: 'contain',
-        border: "2px solid #3b81db",  // Border similar to the color boxes
+        border: "2px solid #3b81db",  
         padding: "0",
         borderRadius:"0px",
         boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.3), inset -1px -1px 5px rgba(255, 255, 255, 0.5)",
         backgroundColor: "#f0f0f0",
         [theme.breakpoints.up('xs')]: {
-            width: "auto",  // Adjust the size as needed
-            height: "15vh",  // Keeps the aspect ratio
+            width: "auto", 
+            height: "15vh", 
             maxWidth: "auto",
             maxHeight:"100vh",
             marginBottom:"8vh",
             marginLeft:"-8vw"
         },
         [theme.breakpoints.up('md')]: {
-            width: "auto",  // Adjust the size as needed
-            height: "30vh",  // Keeps the aspect ratio
+            width: "auto", 
+            height: "30vh",
             maxWidth: "auto",
             maxHeight:"100vh",
             marginBottom:"0",
             marginLeft:"0"
         },
         [theme.breakpoints.up('lg')]: {
-            width: "auto",  // Adjust the size as needed
-            height: "40vh",  // Keeps the aspect ratio
+            width: "auto", 
+            height: "40vh", 
             maxWidth: "auto",
             maxHeight:"100vh",
             marginBottom:"0",
@@ -245,7 +244,7 @@ function ThisIsMeModal({ open, handleClose }) {
         padding: "0",
         border: "2px solid #3b81db",
         borderRadius:"0px",
-        backgroundColor: "#f0f0f0",  // Light background color to enhance the sunken effect
+        backgroundColor: "#f0f0f0", 
         '&:hover': {
             boxShadow: `
                 inset 3px 3px 0 rgba(0, 0, 0, 0.6),  /* More pronounced shadow on hover */
@@ -296,9 +295,9 @@ function ThisIsMeModal({ open, handleClose }) {
             sx: {
               width: {
                 xs:'90vw',
-                sm: '90vw', // Medium screens
-                md: '60vw', // Default desktop screens
-                lg: '40vw', // Larger desktops
+                sm: '90vw',
+                md: '60vw',
+                lg: '40vw',
               },
               maxHeight: {
                 xs: '32vh',
@@ -315,10 +314,10 @@ function ThisIsMeModal({ open, handleClose }) {
                         fontFamily: 'Arial, sans-serif',
                         fontSize: '0.8rem',
                         fontWeight: 'normal',
-                        textRendering: 'optimizeLegibility',  // Helps with smooth, sharp text rendering
-                        '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
-                        '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
-                        fontSmooth: 'never',  // Disable font smoothing (other browsers)
+                        textRendering: 'optimizeLegibility', 
+                        'WebkitFontSmoothing': 'none', 
+                        'MozOsxFontSmoothing': 'auto',
+                        fontSmooth: 'never', 
                     }}
                 >
                     my name is amelia rae orodio btw...
@@ -341,16 +340,16 @@ function ThisIsMeModal({ open, handleClose }) {
                                         fontFamily: 'Arial, sans-serif',
                                         fontSize: '0.7rem',
                                         fontWeight: 'normal',
-                                        textRendering: 'optimizeLegibility',  // Helps with smooth, sharp text rendering
-                                        '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
-                                        '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
-                                        fontSmooth: 'never',  // Disable font smoothing (other browsers)
+                                        textRendering: 'optimizeLegibility',  
+                                        'WebkitFontSmoothing': 'none',  
+                                        'MozOsxFontSmoothing': 'auto', 
+                                        fontSmooth: 'never', 
                                     }}>
                                         Basic Colors:
                                     </Typography>
-                                    <Grid container spacing={spacing} columns={8}> {/* Creates a grid with 8 columns */}
+                                    <Grid container spacing={spacing} columns={8}>
                                         {colors.map((color, index) => (
-                                            <Grid item xs={0.9} key={index}> {/* Each box takes up 1/8th of the row */}
+                                            <Grid item xs={0.9} key={index}> 
                                                 <Colors
                                                     sx={{
                                                         backgroundColor: color 
@@ -361,18 +360,20 @@ function ThisIsMeModal({ open, handleClose }) {
                                     </Grid>
                                 </Box>
                                 <Box sx = {{marginTop:"3vh"}}>
-                                    <Typography sx = {{fontFamily: 'Arial, sans-serif',
-                                        fontSize: '0.7rem',
-                                        fontWeight: 'normal',
-                                        textRendering: 'optimizeLegibility',  // Helps with smooth, sharp text rendering
-                                        '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
-                                        '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
-                                        fontSmooth: 'never',}}>
+                                    <Typography sx = {{
+                                            fontFamily: 'Arial, sans-serif',
+                                            fontSize: '0.7rem',
+                                            fontWeight: 'normal',
+                                            textRendering: 'optimizeLegibility',  
+                                            'WebkitFontSmoothing': 'none', 
+                                            'MozOsxFontSmoothing': 'auto',
+                                            fontSmooth: 'never', 
+                                        }}>
                                         Customized Colors:
                                     </Typography>
                                     <Grid container spacing={spacing} columns={8}>
                                         {[...Array(16)].map((_, index) => (
-                                            <Grid item xs={0.9} key={index}> {/* Each box takes up 1/8th of the row */}
+                                            <Grid item xs={0.9} key={index}> 
                                                 <Colors sx={{backgroundColor: "white"}} />
                                             </Grid>
                                         ))}
@@ -381,35 +382,35 @@ function ThisIsMeModal({ open, handleClose }) {
                                 <ClosingButtonsGroup>
                                     <DefineColors variant = "outlined" sx = {{
                                             fontFamily: 'Arial, sans-serif',
-                                            fontSize: '10pt',
+                                            fontSize: '0.8rem',
                                             fontWeight: 'normal',
-                                            textRendering: 'optimizeLegibility',  // Helps with smooth, sharp text rendering
-                                            '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
-                                            '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
-                                            fontSmooth: 'neveDefine Custom Colors >>',
+                                            textRendering: 'optimizeLegibility',  
+                                            'WebkitFontSmoothing': 'none', 
+                                            'MozOsxFontSmoothing': 'auto', 
+                                            fontSmooth: 'never', 
                                         }}
                                         onClick={handleClose}
                                         >Define Custom Colors >></DefineColors>
                                     <OkCancel>
                                         <ClosingButtons variant = "outlined" sx = {{
                                             fontFamily: 'Arial, sans-serif',
-                                            fontSize: '10pt',
+                                            fontSize: '0.8rem',
                                             fontWeight: 'normal',
-                                            textRendering: 'optimizeLegibility',  // Helps with smooth, sharp text rendering
-                                            '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
-                                            '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
-                                            fontSmooth: 'never',
+                                            textRendering: 'optimizeLegibility', 
+                                            'WebkitFontSmoothing': 'none', 
+                                            'MozOsxFontSmoothing': 'auto',
+                                            fontSmooth: 'never',  
                                         }}
                                         onClick={handleClose}
                                         >ok</ClosingButtons>
                                         <ClosingButtons variant = "outlined" sx = {{
                                             fontFamily: 'Arial, sans-serif',
-                                            fontSize: '10pt',
+                                            fontSize: '0.8rem',
                                             fontWeight: 'normal',
-                                            textRendering: 'optimizeLegibility',  // Helps with smooth, sharp text rendering
-                                            '-webkit-font-smoothing': 'none',  // Disable font smoothing (MacOS/WebKit)
-                                            '-moz-osx-font-smoothing': 'auto', // Auto font smoothing (Firefox)
-                                            fontSmooth: 'never',
+                                            textRendering: 'optimizeLegibility',  
+                                            'WebkitFontSmoothing': 'none',  
+                                            'MozOsxFontSmoothing': 'auto', 
+                                            fontSmooth: 'never', 
                                         }}
                                         onClick={handleClose}
                                         >cancel</ClosingButtons>

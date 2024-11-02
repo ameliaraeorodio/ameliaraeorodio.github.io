@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import React Router components
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepage from './work screens/homepage';
 import AboutMe from './work screens/aboutme';
 import WorksScreen from './work screens/works';

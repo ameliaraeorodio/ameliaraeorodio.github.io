@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState} from 'react';
 import '../App.css';
 import { Box } from '@mui/material';
 
@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import {useMediaQuery} from '@mui/material';
 function WorksScreen(){
-    const [hoveredStar, setHoveredStar] = useState(null)
+    const [hoveredStar] = useState(null)
     const navigate = useNavigate();
     const handleBackClick = () => {
         navigate('/');
@@ -22,12 +22,11 @@ function WorksScreen(){
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
     const isMediumScreen = useMediaQuery(theme.breakpoints.between('sm', 'md'));
-    const isLargeScreen = useMediaQuery(theme.breakpoints.up('md'));
     
     const getColumnCount = () => {
-    if (isSmallScreen) return 1; // 1 column on small screens
-    if (isMediumScreen) return 2; // 2 columns on medium screens
-    return 4; // 4 columns on large screens
+    if (isSmallScreen) return 1;
+    if (isMediumScreen) return 2; 
+    return 4;
     };
 
     const PinkTooltip = styled(({ className, ...props }) => (
@@ -42,6 +41,7 @@ function WorksScreen(){
       }));
     const works = [
         {
+            key:1,
             height: 150,
             img: "",
             title:"Current Portfolio",
@@ -51,9 +51,11 @@ function WorksScreen(){
             link: "https://github.com/ameliaraeorodio/insidemymind"
         },
         {
+            key:2,
             img:"hellokitty.gif"
         },
         {
+            key:3,
             height: 150,
             img: "",
             title:"Playlister",            
@@ -63,9 +65,11 @@ function WorksScreen(){
             link: "https://github.com/ameliaraeorodio/Playlister"
         },
         {
+            key:4,
             img:"kirby.gif"
         },
         {
+            key:5,
             height: 150,
             img: "",
             title:"ExploreX",
@@ -75,6 +79,7 @@ function WorksScreen(){
             link: "https://github.com/JacobNiyazov/ExploreX"
         },
         {
+            key:6,
             height: 150,
             img: "",
             title:"Old Portfolio",
@@ -84,7 +89,8 @@ function WorksScreen(){
             link: "https://github.com/ameliaraeorodio/ameliaraeorodio.github.io"
         },
         {
-            img:"adventure time.gif"
+            key:7,
+            img:"adventuretime.gif"
         },
     ];
 
@@ -98,7 +104,7 @@ function WorksScreen(){
     }));
     const row = {
         display: "flex",
-        justifyContent: "space-between", // Use space-between to distribute space evenly
+        justifyContent: "space-between",
         alignItems: "center",
         flexDirection: "row",
     }
@@ -152,7 +158,7 @@ function WorksScreen(){
          }}>
           <Masonry columns={getColumnCount()} spacing={2}>
             {works.map((item) => (
-              <Item>
+              <Item key={item.key}>
                 {item.img && (
                     <img
                         srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
