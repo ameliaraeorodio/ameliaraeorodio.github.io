@@ -44,6 +44,21 @@
   margin-left: 2vw;
   margin-top: 25vh;
 }
+@media (max-width: 391px) {
+  .kanna {
+    top: 60vh;
+    left: 3vw;
+  }
+
+  .me {
+    top: 50vh;
+    right: 3vw;
+  }
+  .flowergarden{
+    margin-left: 4vw;
+    margin-top: 43vh;
+  }
+}
 
 @media (max-width: 1024px) {
   .kanna {

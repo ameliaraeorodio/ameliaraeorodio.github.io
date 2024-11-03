@@ -45,7 +45,7 @@ function Homepage() {
   const Footer = styled(Typography)(({ theme }) => ({
     fontFamily: "Cormorant, serif" ,
     [theme.breakpoints.down('sm')]: {
-      fontSize: "0.7vh"
+      fontSize: "1vh"
     },
     [theme.breakpoints.up('md')]: {
       fontSize: "1.2vh"

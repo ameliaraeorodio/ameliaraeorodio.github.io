@@ -77,3 +77,18 @@ code {
     font-size: 0.4vh; /* Extra large screens */
   }
 }
+
+@media (max-width: 391px) {
+  .kannaTest {
+    font-size:0.4vh;
+  }
+  .meTest {
+    font-size:0.3vh;
+  }
+  .flowerTest {
+    font-size:0.4vh;
+  }
+  .star-container {
+    font-size: 0.3vh; /* Extra large screens */
+  }
+}
