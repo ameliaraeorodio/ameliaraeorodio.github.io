@@ -31,12 +31,18 @@
   position: absolute;
   bottom: 26vh;
   left: 1vw;
+  font-family: monospace, fixed; 
+  font-weight: bold; 
+  font-size: 0.5vh
 }
 
 .me{
   position: absolute;
   bottom: 25vh;
   right: 1vw;
+  font-family: monospace, fixed; 
+  font-weight: bold;
+  font-size:0.4vh;
 }
 .flowergarden{
   display: flex;
@@ -44,48 +50,50 @@
   margin-left: 2vw;
   margin-top: 25vh;
 }
-@media (max-width: 391px) {
-  .kanna {
-    top: 60vh;
-    left: 3vw;
-  }
-
-  .me {
-    top: 50vh;
-    right: 3vw;
-  }
-  .flowergarden{
-    margin-left: 4vw;
-    margin-top: 43vh;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .kanna {
     top:57vh;
     left: 2vw;
+    font-size:0.4vh;
   }
 
   .me {
     top: 57vh;
     right: 2vw;
+    font-size:0.3vh;
   }
 
   .flowergarden{
-    margin-left: 4vw;
+    margin-left: 0;
     margin-top: 37vh;
   }
 }
 
-/* For small screens (e.g., mobile phones) */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .kanna {
-    top: 50vh;
+    top: 70vh;
+    left: 3vw;
+    font-size:0.4vh;
+  }
+
+  .me {
+    top: 70vh;
+    right: 3vw;
+    font-size:0.3vh;
+  }
+  .flowergarden{
+    margin-left: 4vw;
+    margin-top: 43vh;
+  }
+}
+@media (max-width: 600px) {
+  .kanna {
+    top: 100vh;
     left: 3vw;
   }
 
   .me {
-    top: 50vh;
+    top: 100vh;
     right: 3vw;
   }
   .flowergarden{
@@ -93,6 +101,10 @@
     margin-top: 43vh;
   }
 }
+
+
+/* For small screens (e.g., mobile phones) */
+
 
 .App-link {
   color: #61dafb;

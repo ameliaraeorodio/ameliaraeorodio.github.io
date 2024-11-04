@@ -28,10 +28,13 @@ function Homepage() {
     },
   }));
   const Text = styled('div')(({ theme }) => ({
-    
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.up('xs')]: {
       minHeight: "4rem",
       fontSize: "2rem"
+    },
+    [theme.breakpoints.up('sm')]: {
+      minHeight: "4rem",
+      fontSize: "3rem"
     },
     [theme.breakpoints.up('md')]: {
       minHeight: "6rem",

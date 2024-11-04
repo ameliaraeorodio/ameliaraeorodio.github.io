@@ -29,30 +29,13 @@ code {
   font-size: 1vh;
 }
 
-
-.kannaTest{
-  font-family: monospace, fixed; 
-  font-weight: bold; 
-  font-size: 0.5vh
-}
-.meTest{
-  font-family: monospace, fixed; 
-  font-weight: bold;
-  font-size:0.4vh;
-}
 .flowerTest{
   font-family: monospace, fixed; 
   font-weight: bold; 
   font-size: 1.6vh
 }
-@media (max-width: 1024px) {
-  .kannaTest {
-    font-size:0.5vh;
-  }
 
-  .meTest {
-    font-size:0.3vh;
-  }
+@media (max-width: 1200px) {
   .flowerTest {
     font-size:0.63vh;
   }
@@ -60,35 +43,20 @@ code {
     font-size: 0.8vh;
 }
 }
-
 /* For small screens (e.g., mobile phones) */
-@media (max-width: 768px) {
-  .kannaTest {
-    font-size:0.4vh;
+@media (max-width: 900px) {
+  .flowerTest {
+    font-size:0.6vh;
   }
-
-  .meTest {
-    font-size:0.3vh;
+  .star-container {
+    font-size: 0.6vh; /* Extra large screens */
   }
+}
+@media (max-width: 600px) {
   .flowerTest {
     font-size:0.4vh;
   }
   .star-container {
     font-size: 0.4vh; /* Extra large screens */
-  }
-}
-
-@media (max-width: 391px) {
-  .kannaTest {
-    font-size:0.4vh;
-  }
-  .meTest {
-    font-size:0.3vh;
-  }
-  .flowerTest {
-    font-size:0.4vh;
-  }
-  .star-container {
-    font-size: 0.3vh; /* Extra large screens */
   }
 }
