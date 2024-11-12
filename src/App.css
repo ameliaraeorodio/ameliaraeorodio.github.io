@@ -89,12 +89,12 @@
 }
 @media (max-width: 600px) {
   .kanna {
-    top: 100vh;
+    top: 60vh;
     left: 3vw;
   }
 
   .me {
-    top: 100vh;
+    top: 60vh;
     right: 3vw;
   }
   .flowergarden{

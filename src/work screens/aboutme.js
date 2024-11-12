@@ -177,7 +177,17 @@ function AboutMe(){
             </Text>
           </Box>
             <PictureAndParagraph>
-                <ImageList sx={{flex: 1, height: "100%", padding: 0, margin: 0 }} cols={3}>
+              <Box sx = {{flex:1}}>
+                <ImageList sx={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)', // 3 equal columns
+                  gridAutoRows: '1fr', // Ensures equal height for each item
+                  gap: '10px', // Add space between grid items
+                  width: '100%', // Ensure the image list takes up full width of the container
+                  height: 'auto', // Adjust the height based on the content (images)
+                  padding: 0,
+                  margin: 0,
+                }} cols={3}>
                     {itemData.map((item) => (
                       <PinkTooltip key = {item.key} title = {item.title} followCursor>
                         <ImageListItem key={item.img}>
@@ -191,6 +201,7 @@ function AboutMe(){
                       </PinkTooltip>
                     ))}
                 </ImageList>
+              </Box>
                 <Box sx={{
                   height: '100%', 
                   width:"100%",
