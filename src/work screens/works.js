@@ -150,7 +150,7 @@ function WorksScreen(){
                     />
             </Text>
           </Box>
-        <Box sx={{ width: "100vw",
+        <Box sx={{ width: "98vw",
          minHeight: 393,
          display: "flex",
          justifyContent: "center",
@@ -165,7 +165,7 @@ function WorksScreen(){
                         src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
                         alt={item.title}
                         loading="lazy"
-                        style = {{height:"20vh", }}
+                        style = {{height:"19vh", }}
                     />
                 )}
                 {item.year &&(

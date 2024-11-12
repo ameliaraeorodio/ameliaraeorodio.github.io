@@ -29,7 +29,7 @@
 
 .kanna{
   position: absolute;
-  bottom: 26vh;
+  bottom: 27vh;
   left: 1vw;
   font-family: monospace, fixed; 
   font-weight: bold; 
@@ -38,7 +38,7 @@
 
 .me{
   position: absolute;
-  bottom: 25vh;
+  bottom: 27vh;
   right: 1vw;
   font-family: monospace, fixed; 
   font-weight: bold;
@@ -48,7 +48,8 @@
   display: flex;
   flex-direction: row;
   margin-left: 2vw;
-  margin-top: 25vh;
+  margin-top: 20vh;
+
 }
 @media (max-width: 1200px) {
   .kanna {

@@ -47,15 +47,7 @@ function Homepage() {
   }));
   const Footer = styled(Typography)(({ theme }) => ({
     fontFamily: "Cormorant, serif" ,
-    [theme.breakpoints.down('sm')]: {
-      fontSize: "1vh"
-    },
-    [theme.breakpoints.up('md')]: {
-      fontSize: "1.2vh"
-    },
-    [theme.breakpoints.up('lg')]: {
-      fontSize: "3vh"
-    },
+    fontSize:"clamp(1vw, 1.6vw, 2vw)",
   }));
   return (
     <div className="App">
